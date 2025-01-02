@@ -1,0 +1,665 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+body{
+  background-color: black;
+  color: white;
+}
+
+.container{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+ 
+}
+
+.wrapper{
+  background-image: url(/image/wrapper/wrapper.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.header{
+  padding-top: 64px;
+  padding-bottom: 24px;
+}
+/* header start*/
+
+.header-container{
+  max-width: 1420px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo{
+  display: flex;
+}
+
+.nav_item{
+  list-style: none;
+  display: flex;
+  gap: 48px;
+  background-color: #17171799;
+  border: 1px solid #262626;
+  border-radius: 50px;
+  padding: 20px 34px;
+}
+
+.nav_item_link{
+  text-decoration: none;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20.8px;
+  text-align: left;
+  color:rgba(204, 204, 204, 1);
+}
+
+.header-btn{
+  border-radius: 100px;
+  background: rgba(23, 23, 23, 0.6);
+  color:rgba(204, 204, 204, 1);
+  border: 1px solid rgba(38, 38, 38, 1) ;
+  text-decoration: none;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20.8px;
+  text-align: left;
+  padding: 16px 28px;
+}
+
+/*Section*/
+
+.section {
+ 
+  padding-top: 125px;
+  padding-bottom: 119px;
+}
+.section_cotainer {
+  max-width: 723px;
+}
+.section_title {
+  font-family: Poppins;
+  font-size: 132px;
+  font-weight: 500;
+  line-height: 132px;
+  letter-spacing: -2.4000000953674316px;
+  background: linear-gradient(243.33deg, #FFFFF7 8.55%, #727267 100%);
+  color: transparent;
+  background-clip: text;
+  margin-bottom: 30px;
+}
+.section-text {
+  max-width: 516px;
+  font-family: Inter;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 35px;
+  letter-spacing: -0.18000000715255737px;
+  text-align: center;
+  color:rgba(125, 127, 120, 1);
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 49px;
+}
+.section_link {
+  display: inline-flex;
+  gap: 24px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #FFFFF7;
+  text-decoration: none;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 22px;
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: center;
+  color:  rgba(0, 0, 0, 1);
+  padding: 9px 15px 10px 20px;
+}
+
+/* Secttion-together */
+
+ .together {
+  padding-top: 119px;
+  padding-bottom: 117px;
+}
+.together-contanier {
+  max-width: 1137px;
+}
+.together-title {
+  font-family: Poppins;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 52.8px;
+  letter-spacing: -1.3200000524520874px;
+  text-align: center;
+  background: linear-gradient(79.97deg, #FFFFF7 0%, rgba(255, 255, 247, 0.34) 100%);
+  color: transparent;
+  background-clip: text;
+  margin-bottom: 82px;
+}
+.togethet-card_container {
+  display: grid;
+  gap: 27px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.togethet-card {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  align-items: center;
+  background-color: rgba(27, 27, 27, 1);
+  border: 1px solid rgba(38, 38, 38, 1);
+  padding: 0 17px 32px 17px;
+  text-align: center;
+  border-radius: 30px;
+}
+.togethet-card_img {
+  width: 120px;
+  height: 120px;
+  transform: translateY(-17px);
+}
+
+.together-card_text {
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.5199999809265137px;
+  text-align: center;
+  color: rgba(204, 204, 204, 1);
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+
+/* Club section */
+
+.club-section {
+  padding-top: 92px;
+  padding-bottom: 109px;
+}
+.club-section_container {
+  max-width: 1137px;
+}
+.club-section_title {
+  font-family: Poppins;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 52.8px;
+  letter-spacing: -1.3200000524520874px;
+  text-align: center;
+  background: linear-gradient(79.97deg, #FFFFF7 0%, rgba(255, 255, 247, 0.34) 100%);
+  color: transparent;
+  background-clip: text;
+  margin-bottom: 80px;
+}
+.club-section_card {
+  display: grid;
+  gap: 52px;
+  grid-template-columns: 1fr 1fr 1fr ;
+}
+.club-section_item {
+  display: flex;
+  gap: 19px;
+  align-items: center;
+  background: rgba(27, 27, 27, 1);
+  border-radius: 30px;
+  border: 1px solid rgba(38, 38, 38, 1);
+  padding: 15px 21px 16px 15px;
+}
+.club-section_img {
+  width: 100px;
+  height: 100;
+}
+.club-section_text {
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.5199999809265137px;
+  text-align: left;
+  color :rgba(204, 204, 204, 1);
+}
+
+
+/* Forum section */
+
+
+.forum {
+  padding-top: 109px;
+  padding-bottom: 106px;
+}
+
+.forum-container {
+  max-width: 1024px;
+  position: relative;
+}
+
+.forum-img_1{
+  max-width: 330px;
+  position: absolute;
+  bottom: 64px;
+  left: -430px;
+}
+
+.forum-img_2{
+  max-width: 330px;
+  position: absolute;
+  top: 64px;
+  right: -430px;
+}
+
+
+.forum-title {
+  font-family: Poppins;
+  font-size: 44px;
+  font-weight: 400;
+  line-height: 52.8px;
+  letter-spacing: -1.3200000524520874px;
+  text-align: center;
+  background: linear-gradient(71.83deg, #FFFFF7 0%, rgba(255, 255, 247, 0.34) 100%);
+  color: transparent;
+  background-clip: text;
+  max-width: 840px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 47px;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+
+}
+
+.forum-info_item {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+}
+.forum-info_items {
+  width: 100%;
+  max-width: 318px;
+  display: grid;
+  gap: 10px;
+}
+
+.forum-info_item .forum-info_items:nth-child(3){
+  max-width: 265px;
+  padding-top: 14px;
+}
+
+.forum-info_title {
+  font-family: Poppins;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 25.5px;
+  text-align: left;
+  color: #D7D7D7;
+  margin-left: 20px;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.forum-info_input {
+  font-family: Poppins;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 22.5px;
+  text-align: left;
+  outline: none;
+  border-radius: 100px;
+  background: #FFFFFF;
+  border: none;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-left: 16px;
+  padding-right: 16px;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.forum-info_input :placeholder {
+  color:  #B7B7B7;
+}
+
+.forum-info_btn {
+  display: flex;
+  cursor: pointer;
+  border: none;
+  border-radius: 22px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  transform: translateY(10px);
+}
+
+/* Aboutme */
+
+.aboutme {
+  padding-top: 106px;
+  padding-bottom: 100px;
+}
+
+.aboutme-container {
+  max-width: 1100px;
+  
+}
+
+.aboutme-title {
+  font-family: Poppins;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 52.8px;
+  letter-spacing: -1.3200000524520874px;
+  text-align: center;
+  background: linear-gradient(79.97deg, #FFFFF7 0%, rgba(255, 255, 247, 0.34) 100%);
+  color: transparent;
+  background-clip: text;
+  margin-bottom: 86px;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.aboutme-col {
+  display: grid;
+  gap: 2px;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+}
+.aboutme-rows {
+  max-width: 497px;
+}
+.aboutme-col_title {
+  font-family: Poppins;
+  font-size: 51px;
+  font-weight: 600;
+  line-height: 41.8px;
+  letter-spacing: -1.1399999856948853px;
+  text-align: left;
+  color: #CCCCCC;
+  margin-bottom: 35px;
+   text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+
+}
+.aboutme-col_text {
+  font-family: Poppins;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 41.8px;
+  letter-spacing: -1.1399999856948853px;
+  text-align: left;
+  color: #CCCCCC;
+  margin-left: auto;
+  margin-right: auto;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.aboutme-img {
+  border-radius: 31px; 
+  object-fit: cover;
+  object-position: top;
+}
+
+
+/* Statistics */
+
+.statistics {
+  padding-top: 100px;
+  padding-bottom: 90px;
+}
+.statistcs-container {
+  max-width: 970px;
+}
+
+.statistics-title {
+  font-family: Poppins;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 52.8px;
+  letter-spacing: -1.3200000524520874px;
+  text-align: center;
+  background: linear-gradient(79.97deg, #FFFFF7 0%, rgba(255, 255, 247, 0.34) 100%);
+  color: transparent;
+  background-clip: text;
+  margin-bottom: 61px;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.statistics-col {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.statistics-number {
+  font-family: Poppins;
+  font-size: 70px;
+  font-weight: 400;
+  line-height: 73.5px;
+  letter-spacing: -1.399999976158142px;
+  text-align: center;
+  background: linear-gradient(30.62deg, #FFFFF7 0%, rgba(255, 255, 247, 0.34) 100%);
+  color: transparent;
+  background-clip: text;
+  margin-bottom: 12px;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+
+}
+.statistics-text {
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: -0.20000000298023224px;
+  text-align: center;
+  color: #7A7A7A;
+  max-width: 224px;
+  margin-left: auto;
+  margin-right: auto;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+/* Sections */
+
+.missons {
+  padding-top: 85px;
+  padding-bottom: 75px;
+}
+.missons-container {
+  max-width: 1100px;
+}
+
+.missions-title {
+  font-family: Poppins;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 52.8px;
+  letter-spacing: -1.3200000524520874px;
+  text-align: center;
+  margin-bottom: 41px;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+
+}
+.missions-info {
+  max-width: 1060px;
+  background: linear-gradient(113.49deg, #FFFFFF 0%, #D2D2D2 100%);
+  padding: 78px 75px 99px;
+  border-radius: 24px;
+  position: relative;
+}
+
+.missons-text {
+  font-family: Poppins;
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 60px;
+  letter-spacing: -1.6200000047683716px;
+  text-align: center;
+  color:  #000000;
+  max-width: 911px;
+  margin-left: auto;
+  margin-right: auto;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.missons-info_icon{
+  position: absolute;
+  bottom: -25px;
+  right: -100px;
+  max-width: 190px;
+}
+
+/* Join */
+
+.join-section {
+  padding-top: 75px;
+  padding-bottom: 105px;
+}
+.join-container {
+  max-width: 1138px;
+}
+.join-title {
+  font-family: Poppins;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 52.8px;
+  letter-spacing: -1.3200000524520874px;
+  text-align: center;
+  background: linear-gradient(79.97deg, #FFFFF7 0%, rgba(255, 255, 247, 0.34) 100%);
+  color: transparent;
+  background-clip: text;
+  margin-bottom: 85px;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.join-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  gap: 28px 82px;
+}
+.join-rows {
+  padding: 19px 23px 19px 28px;
+  border-radius: 24px;
+  display: flex;
+  gap: 24px;
+  align-items: center;;
+  order: initial;
+  background: #FFFFFF;
+
+}
+.join-rows_number {
+  width: 78px;
+  height: 84px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Poppins;
+  font-size: 120px;
+  font-weight: 500;
+  line-height: 132px;
+  letter-spacing: -0.5199999809265137px;
+  text-align: center;
+  color:#E0E0E0;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+
+}
+.join-rows_text {
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: -1.1399999856948853px;
+  text-align: left;
+  color: #000000;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+/* Requirements */
+
+.requirements {
+  padding-top: 105px;
+  padding-bottom: 91px;
+}
+.requirements-container {
+  max-width: 1124px;
+}
+
+.requirements-title {
+  font-family: Poppins;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 52.8px;
+  letter-spacing: -1.3200000524520874px;
+  text-align: center;
+  color: #FFFFFF;
+  max-width: 1280px;
+  margin-bottom: 88px;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+
+}
+.requirements-text {
+  font-family: Poppins;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 52.8px;
+  letter-spacing: -1.3200000524520874px;
+  text-align: center;
+  background: linear-gradient(79.97deg, #FFFFF7 0%, rgba(255, 255, 247, 0.34) 100%);
+  color: transparent;
+  background-clip: text;
+  margin-bottom: 79px;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+
+}
+.requirements-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 52px;
+  margin-bottom: 40px;
+}
+.requirements-rows {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  border: 1px solid #262626;
+  background-color: #1b1b1b;
+  border-radius: 30px;
+  grid-column: span 2;
+  padding: 30px 16px;
+}
+
+.requirements-rows_text {
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.5199999809265137px;
+  text-align: left;
+  color: #CCCCCC;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
