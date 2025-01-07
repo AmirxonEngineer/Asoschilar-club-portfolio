@@ -258,14 +258,14 @@ body{
   max-width: 330px;
   position: absolute;
   bottom: 64px;
-  left: -430px;
+  left: -470px;
 }
 
 .forum-img_2{
   max-width: 330px;
   position: absolute;
   top: 64px;
-  right: -430px;
+  right: -540px;
 }
 
 
@@ -683,6 +683,62 @@ body{
   color: #CCCCCC;
 }
 
+/* Meeting */
+
+.meeting {
+  background-color: white;
+  padding-top: 80px;
+  padding-bottom: 120px;
+}
+.meeting-container {
+  max-width: 1092px;
+}
+
+.meeting-title{
+  font-family: Poppins;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 52.8px;
+  letter-spacing: -1.3200000524520874px;
+  text-align: center;
+  background: linear-gradient(79.97deg, #000000 0%, rgba(24, 24, 24, 0.34) 100%);
+  color: transparent;
+  background-clip: text;
+  margin-bottom: 87px;
+}
+
+.meeting-roows {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 68px;
+}
+.meeting-col {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap:30px 22px;
+}
+
+.meeting-col_img {
+  width: 60px;
+  height: 60px;
+}
+
+.meeting-col_text {
+  font-family: Poppins;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: -1.1399999856948853px;
+  text-align: left;
+  color: black;
+}
+span {
+  font-weight: 600;
+}
+
+
+
 /* Steps */
 
 .steps {
@@ -690,7 +746,7 @@ body{
   padding-bottom: 102px;
 }
 .steps-container {
-  max-width: 1108px;
+  max-width: 952px;
 }
 
 .steps-title {
@@ -706,17 +762,23 @@ body{
   margin-bottom: 79px;
 }
 .steps-col {
+  border: 2px solid #858585;
   display: flex;
   justify-content: space-between;
+  gap: 23px;
   align-items: center;
-  gap: 57px;
+  padding-left: 37px;
+  padding-right: 37px;
   border-radius: 24px;
-  background: #FFFFFF;
-  border: 2px solid #858585
+  padding-bottom: 27px;
 }
-.steps-rows {
+.steps-col .steps-rows:first-child{
+  width: 267px;
+  padding-left: 11px;
 }
 .steps-img {
+  width: 74px;
+  height: 74px;
 }
 .steps-text {
   font-family: Poppins;
