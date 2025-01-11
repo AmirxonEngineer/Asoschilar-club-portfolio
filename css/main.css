@@ -742,11 +742,11 @@ span {
 /* Steps */
 
 .steps {
-  padding-top: 96px;
+  padding-top: 192px;
   padding-bottom: 102px;
 }
 .steps-container {
-  max-width: 952px;
+  max-width: 1100px;
 }
 
 .steps-title {
@@ -762,23 +762,39 @@ span {
   margin-bottom: 79px;
 }
 .steps-col {
-  border: 2px solid #858585;
+  background-color: white;
+  color: black;
   display: flex;
-  justify-content: space-between;
-  gap: 23px;
   align-items: center;
-  padding-left: 37px;
-  padding-right: 37px;
+  justify-content: space-between;
   border-radius: 24px;
-  padding-bottom: 27px;
+  border: 2px solid #858585;
+  padding: 18px 68px 27px 80px;
+ }
+ 
+.steps-rows {
+  max-width: 256px;
+ 
 }
-.steps-col .steps-rows:first-child{
-  width: 267px;
-  padding-left: 11px;
+
+.steps-col .steps-rows:nth-child(3){
+  max-width: 162px;
 }
+
+.steps-col .steps-rows:nth-child(3)  .steps-img{
+  width: 49px;
+  height: 49px;
+  margin-bottom: 23px;
+}
+
+.steps-col .steps-rows:nth-child(5){
+  max-width: 180px;
+}
+
 .steps-img {
   width: 74px;
   height: 74px;
+  margin-bottom: 14px;
 }
 .steps-text {
   font-family: Poppins;
@@ -787,5 +803,33 @@ span {
   line-height: 21px;
   letter-spacing: -1px;
   text-align: left;
-  color:  #000000;
+}
+
+.steps-link {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: -1px;
+  text-align: left;
+  text-decoration: none;
+}
+
+
+/* Price */
+
+.price {
+  background-color: orange;
+  padding-top: 102px;
+  padding-bottom: 62px;
+}
+.price-container {
+}
+.price-top {
+}
+.price-title {
+}
+.price-heading {
+}
+.price-text {
 }
