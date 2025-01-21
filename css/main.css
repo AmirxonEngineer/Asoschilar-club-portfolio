@@ -580,7 +580,7 @@ body {
 }
 
 .aboutme-img {
-  display: flex;
+  width: 100%;
   border-radius: 31px;
   object-fit: cover;
   object-position: top;
@@ -608,7 +608,7 @@ body {
     gap: 30px;
   }
   .aboutme-img {
-    display: flex;
+    height: 310px;
     order: -1;
   }
   .aboutme-col_title{
@@ -1752,8 +1752,7 @@ body.active{
   align-items: center;
   justify-content: center;
 }
-.reponsiv-menu
-.nav_items 
+.reponsiv-menu .nav_items 
 .nav_item_link{
   font-size: 24px;
   color: white;
