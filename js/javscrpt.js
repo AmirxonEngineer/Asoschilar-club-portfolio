@@ -2,7 +2,7 @@ function responsiveMenuJs () {
   const responsiveMenuBtn = document.querySelector('.responsive-menu_btn')
   const responsiveMenu = document.querySelector('.reponsiv-menu')
   const headerHamburger = document.querySelector('.hamburger_menu')
-  const navListLinks = document.querySelectorAll('.nav-items .nav_item_link')
+  const navListLinks = document.querySelectorAll('.nav_item .nav_item_link')
 
   // Menu toggle on header hamburger click
   headerHamburger.addEventListener('click', () => {
