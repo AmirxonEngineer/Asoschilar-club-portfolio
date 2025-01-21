@@ -1741,24 +1741,22 @@ body.active{
   left: 0;
 }
 
-.reponsive-menu-logo {
+.responsive-menu-logo {
   margin-bottom: 35px;
 }
-.reponsiv-menu.nav-item {
+.reponsiv-menu .nav_item {
   display: flex;
   flex-direction: column;
-  background-color: transparent;
-  border: none;
   align-items: center;
   justify-content: center;
+  background-color: transparent;
+  border: none;
 }
-.reponsiv-menu .nav_items 
-.nav_item_link{
+.reponsiv-menu .nav_item .nav_item_link{
   font-size: 24px;
   color: white;
 }
-.reponsiv-menu 
-.header-btn{
+.reponsiv-menu .header-btn{
   display: inline-block;
   margin-top: auto;
 }
@@ -1769,12 +1767,13 @@ body.active{
 }
 
 .responsive-menu_btn {
-  align-items: center;
+  display: flex;
+  background-color: transparent;
+  border: none;
   position: absolute;
   top: 51px;
   right: 32px;
   cursor: pointer;
-  color: #fff;
 }
 
 
