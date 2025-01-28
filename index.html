@@ -9,6 +9,9 @@
   <title>Asoschilar Club</title>
 </head>
 <body>
+  <div class="loader">
+    <div class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+  </div>
 <div class="wrapper">
     <!-- Header -->
 <header class="header">
@@ -105,14 +108,14 @@
       <img class="forum-img_2" src="/image/forum_img/Rectangle_2.png" alt="Rectangle">
       <h2 class="forum-title">Qo‘shiling va o‘z biznesingizni rivojlantiring!</h2>
       <div class="forum-info">
-        <form action="" method="post" id="myForm" class="forum-info_item">
+        <form action="" method="post" name="submit-to-google-sheet" class="forum-info_item">
           <div class="forum-info_items">
             <label class="forum-info_title" for="ism">Ismingiz </label>
-            <input required class="forum-info_input" id="ism" type="text" placeholder="Ismingizni kiriting">
+            <input name="Ism" required class="forum-info_input" id="ism" type="text" placeholder="Ismingizni kiriting">
           </div>
           <div class="forum-info_items">
             <label class="forum-info_title" for="tel"> Telefon raqamingiz</label>
-            <input required class="forum-info_input" id="tel" type="tel" placeholder="+998 ">
+            <input name="Raqam" required class="forum-info_input" id="tel" type="tel" placeholder="+998 ">
           </div>
           <div class="forum-info_items">
             <button  type="submit" class="section_link forum-info_btn" >
@@ -450,5 +453,20 @@
   <script src="/js/aos.js"></script>
   <script>AOS.init()</script>
   <script src="/js/javscrpt.js"></script>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbx-PRm7E9Jpruo4YwCPNSPOlriGB1EUbfWmJ9GPcrMBJ8_zzL20yzZ_TkgMojKaBs1ivA/exec'
+    const form = document.forms['submit-to-google-sheet']
+    let loader =document.querySelector(".loader")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      loader.classList.add("active")
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+          console.log('Success!', response),
+          loader.classList.remove("active")
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
 </body>
 </html>
